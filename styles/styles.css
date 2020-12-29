@@ -1,0 +1,157 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input, button {
+    outline: 0;
+    border: none;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #edf0f5;
+}
+
+.left-main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.left-main-content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+
+
+}
+.info{
+    font-size: 28px;
+}
+.right-main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.logo {
+    font-size: 50px;
+    color: #1877f2;
+    font-family: Arial;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: 50px;
+    border: 1px solid #dddfe2;
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+.input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-button {
+    height: 50px;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: blue;
+}
+
+.password-reset {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #1877f2;
+    cursor: pointer;
+}
+.password-reset:hover {
+    text-decoration: underline;
+}
+.password-reset:visited{
+    color: #1877f2;
+}
+
+.create-account-container {
+    padding-top: 31px;
+    border-top: 1px solid #dddfe2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.create-account-button {
+    height: 50px;
+    background-color: #42b72a;;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    padding: 0 15px;
+
+}
+
+.create-account-button:hover {
+    background-color: green;
+
+}
+
+@media all and (max-width: 1050px) {
+    .main {
+        flex-direction: column;
+    }
+    .left-main {
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+    }
+    .right-main {
+        width: 100%;
+        height: 60%;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    .left-main-content {
+        justify-content: flex-end;
+    }
+}
+
